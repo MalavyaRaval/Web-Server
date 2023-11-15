@@ -10,34 +10,34 @@ Author2: Duccio Rocca
 
 | Requirement                                                       | Completed? | Comments from student |
 | ----------------------------------------------------------------- | ---------- | --------------------- |
-| 1. Your server must handle invalid requests                         | [X]         |                       |
-| 2. Your server must handle GET requests for a static document      | [X]         |                       |
-|   a. If the file exists, the server must respond with a valid HTTP success response  | [X]         |                       |
-|   b. If the file does not exist, the server must respond with a valid HTTP not found response  | [X]         |                       |
-| 3. Your server must handle HEAD requests for a static document     | [X]         |                       |
-|   a. If the file exists, the server must respond with a valid HTTP success response that does not include the file in the body of the response  | [X]         |                       |
-|   b. If the file does not exist, the server must respond with a valid HTTP not found response |
-| 4. Your server must handle POST requests for a script              |          |     This test failed and we were not able to understand why. Probably a problem with the system environment variable for node  |
+| 1. Your server must handle invalid requests                         |✅︎        |                       |
+| 2. Your server must handle GET requests for a static document      |✅︎         |                       |
+|   a. If the file exists, the server must respond with a valid HTTP success response  |✅︎         |                       |
+|   b. If the file does not exist, the server must respond with a valid HTTP not found response  |✅︎         |                       |
+| 3. Your server must handle HEAD requests for a static document     |✅︎         |                       |
+|   a. If the file exists, the server must respond with a valid HTTP success response that does not include the file in the body of the response  |✅︎         |                       |
+|   b. If the file does not exist, the server must respond with a valid HTTP not found response |❌
+| 4. Your server must handle POST requests for a script              |  ❌        |     This test failed and we were not able to understand why. Probably a problem with the system environment variable for node  |
 |   a. File exists:
-|     i. If the script successfully executes, the server responds with a valid HTTP success response that includes the stdout of the executed script in the body |     [X]         |                       |
-|     ii. If the script errors, the server will respond with a valid HTTP error response | [X]         |      For this part I think we compromised the Unit Tests on Created and Scripts, because in our interpretation if the resource is not valid to be executed or pointing to a valid path to create a file, the server should return a InternalErrorResponse                 |
-|   b. If the file does not exist, the server must respond to the client with a valid HTTP not found response | [X]         |                       |
-| 5. Your server must handle PUT requests                              | [X]         |                       |
-|   a. If the file is successfully created, the server must respond with a valid HTTP created response | [X]         |                       |
-|   b. If the file is not successfully created, the server must respond with a valid HTTP error response | | For this part I think we compromised the Unit Tests on Created and Scripts, because in our interpretation if the resource is not valid to be executed or pointing to a valid path to create a file, the server should return a InternalErrorResponse     
-| 6. Your server must handle DELETE requests                           | [X]         |                       |
-|   a. If the file exists, and is successfully deleted, the server must respond with a valid HTTP no content response   | [X]         |                       |
-|   b. If the file exists, and is not successfully deleted, the server must respond with a valid HTTP error response  | [X]         |                       |
-|   c. If the file does not exist, the server must respond to the client with a valid HTTP not found response   | [X]         |                       |
-| 7. Your server must be able to handle simultaneous requests using threads   | [X]         |                       |
-| 8. Your server must support simple authentication                  | [X]         |                       |
-|   a. If the .passwords file exists in the directory and no Authentication header is present, the server must respond with a valid HTTP unauthorized response with the header WWW-Authenticate, value Basic realm=“667 Server”   | [X]         |                       |
-|   b. If the .passwords file exists in the directory and an Authentication header is present, the server must check that the .passwords file contains the username and password provided in the header and:   | [X]         |                       |
-|     1. If the .passwords file does not contain the username and password, the server must respond with a valid HTTP forbidden response   | [X]         |                       |
-|     2. If the .passwords file contains the username and password, the server must respond as it would normally   | [X]         |                       |
-|   c. The .passwords file should contain lines of key-value pairs separated by a colon, where the key is the username and the value is the encrypted password in SHA encryption format |
-|   d. The client will provide a header containing the Base64 encoded username and password, separated by a colon   | [X]         |                       |
-| 9. Your server must log to standard out in the common log format      | [X]         |                       |
+|     i. If the script successfully executes, the server responds with a valid HTTP success response that includes the stdout of the executed script in the body |    ✅︎         |                       |
+|     ii. If the script errors, the server will respond with a valid HTTP error response |✅︎         |      For this part I think we compromised the Unit Tests on Created and Scripts, because in our interpretation if the resource is not valid to be executed or pointing to a valid path to create a file, the server should return a InternalErrorResponse                 |
+|   b. If the file does not exist, the server must respond to the client with a valid HTTP not found response |✅︎         |                       |
+| 5. Your server must handle PUT requests                              |✅︎         |                       |
+|   a. If the file is successfully created, the server must respond with a valid HTTP created response |✅︎         |                       |
+|   b. If the file is not successfully created, the server must respond with a valid HTTP error response |❌ | For this part I think we compromised the Unit Tests on Created and Scripts, because in our interpretation if the resource is not valid to be executed or pointing to a valid path to create a file, the server should return a InternalErrorResponse     
+| 6. Your server must handle DELETE requests                           |✅︎         |                       |
+|   a. If the file exists, and is successfully deleted, the server must respond with a valid HTTP no content response   |✅︎         |                       |
+|   b. If the file exists, and is not successfully deleted, the server must respond with a valid HTTP error response  |✅︎         |                       |
+|   c. If the file does not exist, the server must respond to the client with a valid HTTP not found response   |✅︎         |                       |
+| 7. Your server must be able to handle simultaneous requests using threads   |✅︎         |                       |
+| 8. Your server must support simple authentication                  |✅︎         |                       |
+|   a. If the .passwords file exists in the directory and no Authentication header is present, the server must respond with a valid HTTP unauthorized response with the header WWW-Authenticate, value Basic realm=“667 Server”   |✅︎         |                       |
+|   b. If the .passwords file exists in the directory and an Authentication header is present, the server must check that the .passwords file contains the username and password provided in the header and:   |✅︎         |                       |
+|     1. If the .passwords file does not contain the username and password, the server must respond with a valid HTTP forbidden response   |✅︎         |                       |
+|     2. If the .passwords file contains the username and password, the server must respond as it would normally   |✅︎         |                       |
+|   c. The .passwords file should contain lines of key-value pairs separated by a colon, where the key is the username and the value is the encrypted password in SHA encryption format |❌
+|   d. The client will provide a header containing the Base64 encoded username and password, separated by a colon   |✅︎         |                       |
+| 9. Your server must log to standard out in the common log format      |✅︎         |                       |
 
 ## Results and Conclusions
 
