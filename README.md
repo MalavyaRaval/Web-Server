@@ -71,8 +71,13 @@ https://drive.google.com/file/d/1TWzm9gdKr2QK8_agBOJpKcYq8vr047IY/view?usp=drive
 
 ### What I Learned
 
-This was a really nice opportunity to collabrate with my teammate and work on an actuall server and passing all the tests, that were written in the class. It was a really nice exposure to the server and implementing it. The approach of writting the test first and then implementing it was really something new for me which I am willing to do in my future projects. The Authorization and Authentication was something really tricky but I loced to explore it and it was something new for us to deal with it. Runnig the scripts was a new concept for us and took a lot of effort and time on it, many things went side ways like the other tests started failing and some errors started popping up but we were happy to give our best effort and learn something new from it.
+This was a really nice opportunity to collabrate with my teammate and work on an actuall server and passing all the tests, that were written in the class.
+It was a really nice exposure to the server and implementing it.
+The approach of writting the test first and then implementing it was really something new for me which I am willing to do in my future projects.
+The Authorization and Authentication was something really tricky but I loced to explore it and it was something new for us to deal with it.
+Runnig the scripts was a new concept for us and took a lot of effort and time on it, many things went side ways like the other tests started failing and some errors started popping up but we were happy to give our best effort and learn something new from it.
 
 ### Challenges I Encountered
 
-Working with the mimetypes and http request body was a bit tricky along with working on Authentication was a bit difficult for me as it was something completly new for us. Working on  response writer was a bit difficult because of some errors that we were not able to resolve which took a lot of time. Then running the shell script and the perl script took us time to figure things out and had to work around some stuff to make it work.
+Working with the mimetypes and http request body was a bit tricky along with working on Authentication was a bit difficult for me as it was something completly new for us.
+Working on  response writer was a bit difficult because of some errors that we were not able to resolve which took a lot of time. Then running the shell script and the perl script took us time to figure things out and had to work around some stuff to make it work.
