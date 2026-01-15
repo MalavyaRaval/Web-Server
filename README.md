@@ -63,12 +63,6 @@ We treated situations in which the script cannot be executed as errors, therefor
 5. ─ testCreated() ✘ Unexpected type, expected: <webserver667.responses.writers.CreatedResponseWriter> but was: <webserver667.responses.writers.InternalServerErrorResponseWriter>
 Similarly to the previous one this test doesn't provide a valid file to create so we treated it as an error, again probably a different design choice would have avoided it.
 
-### System Design
-
-In this web server project, we have designed a set of classes to ensure a simple flow of client requests.
-
-https://drive.google.com/file/d/1TWzm9gdKr2QK8_agBOJpKcYq8vr047IY/view?usp=drive_link
-
 ### What I Learned
 
 This was a really nice opportunity to collabrate with my teammate and work on an actuall server and passing all the tests, that were written in the class.
